@@ -17,6 +17,7 @@ const nexe = require("nexe");
 const target = `${os.platform()}-${os.arch()}`;
 nexe.compile({
 	debugBundle: true,
+	build: true,
 	input: path.join(__dirname, "../out/cli.js"),
 	output: `cli-${target}`,
 	targets: [target],
